@@ -18,7 +18,7 @@
    <div class="alert alert-danger">{{$message}}</div>
    @enderror
   <label for="description"> Description</label>
-   <textarea style="height:300px" class="form-control mb-2" type="text" wire:model="description">{{$description}}</textarea>
+   <textarea id="editor" style="height:300px" class="form-control mb-2" type="text" wire:model="description">{{$description}}</textarea>
    
    
   <label for="image" class="">Select Image</label>

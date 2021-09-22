@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0f82a9e6c82f34ce816c547a84fd18a",
+    "content-hash": "d7e1e734cf175a2673957fa058bf9828",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6301,6 +6301,49 @@
                 }
             ],
             "time": "2020-11-12T00:07:28+00:00"
+        },
+        {
+            "name": "wdmg/bootstrap-wysiwyg-editor",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wdmg/bootstrap-wysiwyg.git",
+                "reference": "bcb93be64c869032b5d5a2d1851c3ed4fe83dbaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wdmg/bootstrap-wysiwyg/zipball/bcb93be64c869032b5d5a2d1851c3ed4fe83dbaf",
+                "reference": "bcb93be64c869032b5d5a2d1851c3ed4fe83dbaf",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexsander Vyshnyvetskyy",
+                    "email": "alex.vyshnyvetskyy@gmail.com"
+                },
+                {
+                    "name": "W.D.M.Group, Ukraine",
+                    "email": "wdmg.com.ua@gmail.com"
+                }
+            ],
+            "description": "Simple WYSIWYG editor plugin for Bootstrap 3",
+            "homepage": "https://github.com/wdmg/bootstrap-wysiwyg/",
+            "keywords": [
+                "bootstrap",
+                "editor",
+                "twitter-bootstrap",
+                "wysiwyg"
+            ],
+            "support": {
+                "issues": "https://github.com/wdmg/bootstrap-wysiwyg/issues",
+                "source": "https://github.com/wdmg/bootstrap-wysiwyg/tree/1.1.4"
+            },
+            "time": "2021-03-11T01:44:14+00:00"
         },
         {
             "name": "webmozart/assert",

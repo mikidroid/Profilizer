@@ -22,7 +22,7 @@
 
 <link rel="stylesheet" href="{{ asset('css/Mycss.css') }}">
 
-<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
+
 
         @livewireStyles
 
@@ -112,6 +112,20 @@ $('.menu').toggleClass('clicked');
 $('#nav').toggleClass('show');
 });
 </script>
+
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<script>
+  tinymce.init({
+    selector: 'textarea#editor',
+    skin: 'bootstrap',
+    plugins: 'lists, link, image, media',
+    toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help',
+    menubar: false
+  });
+</script>
+
+
 
 
 
