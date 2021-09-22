@@ -29,7 +29,7 @@ public $bio;
 public $qualifications;
     
     public function mount(){
-     $Userinfo=User::where('user_id','=','admin')->userinfo()->where('id','=',1)->first();
+     $Userinfo=User::where('user_id','=','admin')->first()->userinfo()->where('id','=',1)->first();
      if($Userinfo){
        $this->lists=$Userinfo;
        $this->core_values=$Userinfo->core_values;
