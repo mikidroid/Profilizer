@@ -25,8 +25,8 @@ class AddYearToProjectsTable extends Migration
      */
     public function down()
     {
-        Schema::table('projects', function (Blueprint $table) {
+        
  Schema::dropIfExists('projects');
-        });
+        
     }
 }
