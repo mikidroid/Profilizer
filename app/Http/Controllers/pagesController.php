@@ -17,7 +17,7 @@ class pagesController extends Controller
  public $projects=[];
  
     public function home(){
-        $Userinfo=User::find(1)
+        $Userinfo=User::where('user_id','=','admin')->first()
         ->userinfo()
         ->where('id','=',1)
         ->first();
