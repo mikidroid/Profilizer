@@ -1,5 +1,5 @@
 <div class="container">
- <h3 class="mt-3 p-1 ml-0 text-dark "><b>Articles{{Auth::user()->id}}</b></h3>
+ <h3 class="mt-3 p-1 ml-0 text-dark "><b>Articles</b></h3>
  <div class="row">
   <div class="col-sm-12 col-md-8">
    <div style="width:100%">
