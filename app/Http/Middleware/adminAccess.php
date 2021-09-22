@@ -18,7 +18,7 @@ class adminAccess
     {
      
     if(Auth::check()) {
-      if(Auth::user()->id!=1){
+      if(Auth::user()->user_id!='admin'){
          return redirect ('/'); }}
     else {
       return redirect ('login');}

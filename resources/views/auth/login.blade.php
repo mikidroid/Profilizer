@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-    <div class="card mt-4">
+    <div class="card mt-4 mb-5">
         
         <x-jet-validation-errors class="mb-4" />
 
