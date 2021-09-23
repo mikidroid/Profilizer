@@ -50,11 +50,11 @@ return view('livewire.admin.create-user-info')->extends('layouts.adminLayout')->
  // input generated model into input variable
    $input = ([
            
-    'core_values'=> $this->core_values,
-     'skills'=> $this->skills,
-       'achievements'=> $this->achievements,
-       'bio'=> $this->bio,
-       'qualifications'=> $this->qualifications,
+    'core_values'=> $request->core_values,
+     'skills'=> $request->skills,
+       'achievements'=> $request->achievements,
+       'bio'=> $request->bio,
+       'qualifications'=> $request->qualifications,
        'user_id'=> $this->getAdminId(),
           
           ]);
