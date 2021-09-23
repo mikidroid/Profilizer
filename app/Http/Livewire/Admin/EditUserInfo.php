@@ -27,9 +27,15 @@ public $skills;
 public $achievements;
 public $bio;
 public $qualifications;
+
+// GetAdminId function
+public function getAdminId(){   
+    $adminId=User::where('user_id','=','admin')->first();
+    return $adminId->id;
+}
     
     public function mount(){
-     $Userinfo=User::where('user_id','=','admin')->first()->userinfo()->where('id','=',1)->first();
+     $Userinfo=User::where('user_id','=','admin')->first()->userinfo()->where('user_id','=',$this.getAdminId())->first();
      if($Userinfo){
        $this->lists=$Userinfo;
        $this->core_values=$Userinfo->core_values;
