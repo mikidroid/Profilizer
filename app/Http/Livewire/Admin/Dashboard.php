@@ -78,9 +78,9 @@ use WithFileUploads;
        ->storeAs('public/core/','Logo.png');
        session()->flash('success','Logo has been changed');} 
      else {
-        session()->flash('error','File does not match');
+        
        $successChange=$this->Logo
-       ->saveAs('public/core/','Logo.png');
+       ->storeAs('public/core/','Logo.png');
        session()->flash('success','Logo has been changed');}
         }
    
