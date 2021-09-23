@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Admin;
 use App\Models\userinfo;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
@@ -49,12 +50,12 @@ return view('livewire.admin.create-user-info')->extends('layouts.adminLayout')->
  // input generated model into input variable
    $input = ([
            
-    'core_values'=> $request->core_values,
+    'core_values'=> $this->core_values,
      'skills'=> $this->skills,
        'achievements'=> $this->achievements,
-       'bio'=> $request->bio,
+       'bio'=> $this->bio,
        'qualifications'=> $this->qualifications,
-       'user_id'=> 1,
+       'user_id'=> $this->getAdminId(),
           
           ]);
          
@@ -74,7 +75,11 @@ return view('livewire.admin.create-user-info')->extends('layouts.adminLayout')->
         }
    }
  // End of store function
-    
+ // GetAdminId function
+public function getAdminId(){   
+    $adminId=User::where('user_id','=','admin')->first();
+    return $adminId->id;
+}
  // Load section function
     public function click($value){
      if ($value=='core_values'){
