@@ -70,7 +70,7 @@ $Userinfo=User::find(5)->userinfo()->where('id','=',1)->first();
 
  // input generated model into input variable
  if ($value=='core_values'){
-$Userinfo->core_values= $request->core_values;$Userinfo->save();
+$Userinfo->core_values= '$request->core_values';$Userinfo->save();
 session()->flash('success','User Information added successfully');
          return redirect()->to('/admin/edit-user-info');
  }
