@@ -66,7 +66,7 @@ return view('livewire.admin.edit-user-info')->extends('layouts.adminLayout')->se
  //Update data in database
 public function update(Request $request,$value){
 //   $this->validate();
-$Userinfo=User::find(5)->userinfo()->where('id','=',1)->first();
+$Userinfo=User::where('user_id','=','admin')->first()->userinfo()->where('id','=',1)->first();
 
  // input generated model into input variable
  if ($value=='core_values'){
