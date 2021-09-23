@@ -40,7 +40,7 @@ public $qualifications;
       
      }
       else{
-       session()->flash('errorCode','There was an error loading the data');
+       session()->flash('error','There was an error loading the data');
       }
 
 
