@@ -16,17 +16,23 @@ class pagesController extends Controller
  public $achievements;
  public $projects=[];
  
+// GetAdminId function
+public function getAdminId(){   
+    $adminId=User::where('user_id','=','admin')->first();
+    return $adminId->id;
+}
     public function home(){
         $Userinfo=User::where('user_id','=','admin')->first()
         ->userinfo()
-        ->where('id','=',1)
+        ->where('user_id','=',$this->getAdminId())
         ->first();
+        if($Userinfo){
         $this->qualifications=$Userinfo->qualifications;
         $this->core_values=$Userinfo->core_values;
         $this->bio=$Userinfo->bio;
         $this->achievements=$Userinfo->achievements;
         $this->skills=$Userinfo->skills;
-        
+        }
 
         $content=array(
         'qualifications'=>$this->qualifications,
