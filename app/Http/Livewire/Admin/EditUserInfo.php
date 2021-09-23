@@ -35,7 +35,8 @@ public function getAdminId(){
 }
     
     public function mount(){
-     $Userinfo=User::where('user_id','=','admin')->first()->userinfo()->where('user_id','=',$this.getAdminId())->first();
+      $adminId=$this.getAdminId();
+     $Userinfo=User::where('user_id','=','admin')->first()->userinfo()->where('user_id','=',$adminId)->first();
      if($Userinfo){
        $this->lists=$Userinfo;
        $this->core_values=$Userinfo->core_values;
