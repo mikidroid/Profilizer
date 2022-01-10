@@ -34,5 +34,12 @@
         "font-awesome": "^4.7.0",
         "mdbootstrap": "^4.19.2",
         "tinymce": "^5.8.2"
-    }
+    },
+    "engines": {
+
+    "node": ">= 6.9.4",
+
+    "npm": ">= 4.4.0"
+
+  }
 }
